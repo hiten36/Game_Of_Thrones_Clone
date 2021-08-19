@@ -1,0 +1,977 @@
+@font-face {
+    font-family: GOT;
+    src: url('font/Game\ of\ Thrones.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+.got{
+    font-family: GOT;
+}
+.watch_now{
+    padding: 10px 2px;
+    border: none;
+    outline: none;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    font-family: GOT;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.main{
+    background-color: black;
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.main h1{
+    margin-top: 2rem;
+    margin-bottom: -8rem;
+    color: white;
+    font-size: 10rem;
+}
+.main img{
+    width: 57rem;
+}
+.main-1{
+    background-color: rgb(83, 83, 83);
+    color: rgb(179, 219, 255);
+    width: 100%;
+}
+.main11{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+.box1{
+    width: 70%;
+    padding: 0rem 2rem;
+    border-right: 3px solid rgb(131, 131, 255);
+}
+.box11 h4{
+    padding: 1.2rem 0rem;
+}
+.box11{
+    border-bottom: 1px solid gold;
+}
+.box12{
+    padding-top: 1.2rem
+}
+.box2{
+    padding: 0rem 1.4rem;
+}
+.box2 h4{
+    margin: 1rem 0rem;
+}
+.john{
+    background: url('images/jon.png') no-repeat center center/cover;
+    width: 100%;
+    height: 105vh;
+    position: relative;
+    color: rgb(179, 219, 255);
+}
+.j1{
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+}
+.j1 h1{
+    margin-bottom: 0.5rem;
+    font-size: 4.5rem;
+}
+.j1 h2{
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+}
+.j2{
+    color: white;
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+}
+.j22{
+    margin-left: 1rem;
+}
+.j22 p{
+    margin: 1rem 0rem;
+}
+.dany{
+    background: url('images/dany.png') no-repeat center center/cover;
+    height: 105vh;
+    width: 100%;
+    position: relative;
+    color: rgb(179, 219, 255);
+}
+.d1{
+    left: auto;
+    right: 12vw;
+    text-align: right;
+}
+.d21{
+    margin-left: 1.3rem;
+}
+iframe{
+    height: 18vh;
+}
+.houses{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    color: white;
+    height: 105vh;
+}
+.h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 205vh;
+    cursor: pointer;
+    padding: 0px 10px;
+    bottom: 0px;
+    transition: bottom 0.4s ease-out;
+    position: relative;
+}
+.h h4{
+    margin-top: 10px;
+}
+.h h5{
+    margin: 0.5rem;
+}
+.h p{
+    margin-top: 1.2rem;
+}
+.h1{
+    background-color: #24251f;
+}
+.houses img{
+    width: 13vw;
+    margin-bottom: 70vh;
+}
+.h2{
+    background-color: #363636;
+}
+.h3{
+    background-color: #919191;
+}
+.h4{
+    background-color: black;
+}
+.h5{
+    background-color: #121212;;
+}
+.h6{
+    background-color: #9c9c9c;;
+}
+.h7{
+    background-color: #343434;
+}
+.h1:hover{
+    bottom: 100vh;
+}
+.h2:hover{
+    bottom: 100vh;
+}
+.h3:hover{
+    bottom: 100vh;
+}
+.h4:hover{
+    bottom: 100vh;
+}
+.h5:hover{
+    bottom: 100vh;
+}
+.h6:hover{
+    bottom: 100vh;
+}
+.h7:hover{
+    bottom: 100vh;
+}
+.join{
+    background: url('images/sub.png') no-repeat center center/cover;
+    width: 100%;
+    position: relative;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join1 h1{
+    font-size: 3rem;
+}
+.join1{
+    margin-bottom: 1rem;
+}
+.join2 input{
+    width: 44vw;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+.join2 button{
+    padding: 10px 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    margin-left: 5px;
+    transition: all 0.15s linear;
+    cursor: pointer;
+}
+.join2 button:hover{
+    color: aquamarine;
+}
+.love_story{
+    background: url('images/killed.png') no-repeat center center/cover;
+    width: 100%;
+    height: 105vh;
+    position: relative;
+}
+.love1{
+    position: absolute;
+    top: 25vh;
+    color: white;
+    left: 15vw;
+    width: 40vw;
+}
+.love1 h1{
+    margin-bottom: 2.4rem;
+    font-size: 3.3rem;
+    color: rgb(179, 219, 255);
+}
+.love1 p{
+    color: rgb(179, 219, 255);
+    margin-bottom: 1.4rem;
+}
+.arya{
+    background: url('images/Arya.png');
+    height: 105vh;
+    width: 100%;
+    position: relative;
+}
+.arya1{
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+    width: 40vw;
+}
+.arya1 h1{
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
+}
+.arya12 h5{
+    font-size: 1.4rem;
+}
+.arya1 button{
+    color: black;
+    margin-top: 1.2rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 2rem;
+}
+.arya1 button:hover{
+    background-color: #121212;
+    color: white;
+}
+.arya12 img{
+    width: 30px;
+    margin-right: 10px;
+}
+.arya12{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ned{
+    background: url('images/contact.png') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 105vh;
+}
+.ned1{
+    color: rgb(194, 226, 253);
+    padding: 3rem;
+    border-radius: 6px;
+    position: absolute;
+    top: 20vh;
+    right: 15vw;
+    width: 30vw;
+    background-color: rgba(2, 77, 218, 0.219);
+    display: flex;
+    flex-direction: column;
+}
+.ned2{
+    display: flex;
+    flex-direction: column;
+}
+.ned2 input{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(194, 226, 253);
+    border-bottom: 2px solid rgb(194, 226, 253);
+    margin: 9px 0px;
+    padding: 7px 4px;
+}
+.ned2 textarea{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(194, 226, 253);
+    border-bottom: 2px solid rgb(194, 226, 253);
+    margin: 9px 0px;
+    padding: 7px 4px;
+}
+.send{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(194, 226, 253);
+    font-size: 18px;
+    border-bottom: 2px solid rgb(194, 226, 253);
+    padding: 7px 7px;
+    width: 3.7vw;
+    margin: 6px 0px;
+    text-align: start;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.send:hover{
+    background-color: rgb(194, 226, 253);
+    color: black;
+    border-radius: 5px;
+}
+.ned21{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    justify-content: center;
+}
+.ned22{
+    border-right: 3px solid rgb(194, 226, 253);
+    margin-right: 20px;
+    padding-right: 40px;
+}
+.ned23{
+    margin-left: 20px;
+}
+.ned22 h1{
+    margin-bottom: 10px;
+}
+.ned23 h1{
+    margin-bottom: 10px;
+}
+.watch_now:hover{
+    background-color: white;
+    color: black;
+}
+.sound-box{
+    position: fixed;
+    top: 4vh;
+    right: 4vw;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+.sound-box img{
+    width: 30px;
+}
+.sound{
+    position: relative;
+}
+.m1{
+    position: absolute;
+    top: 0.4vh;
+    left: 0.7vw;
+    display: none;
+    cursor: pointer;
+}
+.m2{
+    position: absolute;
+    top: 0.4vh;
+    left: 0.7vw;
+    cursor: pointer;
+}
+.m3{
+    display: none;
+}
+.m4{
+    display: block;
+}
+.ani{
+    position: relative;
+    animation: ani1 4.5s linear 0s infinite alternate-reverse;
+}
+@keyframes ani1{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 50px;
+    }
+}
+@media only screen and (max-width: 1370px) {
+    .d2{
+        width: 56vw;
+    }
+    .houses img{
+        width: 12vw;
+        margin-bottom: 60vh;
+    }
+    .ned1{
+        width: 35vw;
+        right: 10vw;
+    }
+    .h{
+        width: 15vw;
+    }
+    @keyframes ani1{
+        0%{
+            top: -10px;
+        }
+        100%{
+            top: 30px;
+        }
+    }
+    .send{
+        width: 5.2vw;
+    }
+}
+@media only screen and (max-width: 1260px) {
+    .d1{
+        right: 7vw;
+    }
+    .arya1{
+        width: 62vw;
+    }
+    .ned1{
+        width: 41vw;
+        padding: 2rem;
+        right: 7vw;
+    }
+    .h{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .main img{
+        width: 47rem;
+    }
+    .j2{
+        width: 63vw;
+    }
+    .j1{
+        left: 5vw;
+    }
+    .d1{
+        right:5vw;
+        left: auto;
+    }
+    .houses img{
+        margin-bottom: 50vh;
+        width: 11vw;
+    }
+    .h{
+        font-size: 12px;
+    }
+    .ned1{
+        font-size: 14px;
+        width: 44vw;
+    }
+    .send{
+        width: 6.2vw;
+    }
+}
+@media only screen and (max-width: 896px) {
+    .main h1{
+        font-size: 8rem;
+    }
+    .main img{
+        width: 39rem;
+    }
+    .main{
+        height: 60vh;
+    }
+    .main1{
+        font-size: 13px;
+    }
+    .john{
+        background: url('images/john2.png') no-repeat center center/cover;
+    }
+    .j1{
+        top: 17vh;
+    }
+    .j1 h1{
+        font-size: 3.5rem;
+    }
+    .j2{
+        width: 95%;
+    }
+    .dany{
+        background: url('images/dani2.png') no-repeat center center/cover;
+    }
+    .d1{
+        right: 3vw;
+    }
+    .houses img{
+        margin-bottom: 60vh;
+    }
+    .join2 button{
+        padding: 10px 30px;
+    }
+    .love_story{
+        background: url('images/killed2.jpg') no-repeat center center/cover;
+    }
+    .love1{
+        width: 58vw;
+        top: 48vh;
+        left: 5vw;
+    }
+    .arya{
+        background: url('images/arya2.jpg') no-repeat center center/cover;
+        color: white;
+    }
+    .arya1{
+        top: 25vh;
+        left: 53vw;
+        width: 44vw;
+    }
+    .arya1 h1{
+        font-size: 2.8rem;
+    }
+    .arya1 button{
+        margin-left: 3rem;
+    }
+    .ned1{
+        font-size: 10px;
+    }
+    .send{
+        width: 7.5vw;
+    }
+    .main11{
+        width: 95%;
+    }
+    .h h2{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 728px) {
+    .main h1{
+        font-size: 6rem;
+        margin-top: 5rem;
+    }
+    .main{
+        height: 61vh;
+    }
+    .main img{
+        width: 33rem;
+    }
+    @keyframes ani1{
+        0%{
+            top: 60px;
+        }
+        100%{
+            top: 90px;
+        }
+    }
+    .main11{
+        font-size: 12px;
+    }
+    .j1 h1{
+        font-size: 3rem;
+    }
+    .j1{
+        font-size: 12px;
+    }
+    .watch_now{
+        font-size: 12px;
+    }
+    .houses{
+        height: auto;
+        flex-direction: column;
+    }
+    .h{
+        width: 224vw;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        bottom: auto;
+        left: 0;
+        transition: left 0.3s ease-in-out;
+    }
+    .h{
+        font-size: 14px;
+    }
+    .h h2{
+        font-size: 19px;
+    }
+    .h h4{
+        margin: 0px 20px;
+    }
+    .h p{
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    .h div{
+        display: flex;
+        flex-direction: row;
+        margin-right: 70px;
+    }
+    .houses img{
+        margin-bottom: auto;
+        margin-right: 56vw;
+        margin-left: 36vw;
+        width: 24vw;
+    }
+    .h1:hover{
+        bottom: auto;
+        left: -114vw;
+    }
+    .h2:hover{
+        bottom: auto;
+        left: -114vw;
+    }
+    .h3:hover{
+        bottom: auto;
+        left: -114vw;
+    }
+    .h4:hover{
+        bottom: auto;
+        left: -114vw;
+    }
+    .h5:hover{
+        bottom: auto;
+        left: -114vw;
+    }
+    .h6:hover{
+        bottom: auto;
+        left: -114vw;
+    }
+    .h7:hover{
+        bottom: auto;
+        left: -114vw;
+    }
+    .join h1{
+        font-size: 2.5rem;
+    }
+    .join2 input{
+        width: 54vw;
+        padding: 8px 20px;
+    }
+    .join2 button{
+        padding: 8px 30px;
+    }
+    .love1 h1{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .arya1 h1{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .arya12 h5{
+        font-size: 18px;
+    }
+    .arya12 img{
+        width: 27px;
+    }
+    .arya1 button{
+        margin-left: 0.5rem;
+        color: white;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    .arya1 button:hover{
+        background-color: white;
+        color: black;
+    }
+    .ned1{
+        width: 51vw;
+        top: 31vh;
+    }
+    .send{
+        width: 9.5vw;
+    }
+    .ned22{
+        margin-right: 9px;
+        padding-right: 27px;
+    }
+    .ned21{
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 624px) {
+    .send{
+        width: 10.5vw;
+    }
+}
+@media only screen and (max-width: 577px) {
+    .send{
+        width: 11.5vw;
+    }
+    .box11 h4{
+        padding: 1rem 0rem;
+    }
+    .box12{
+        padding-top: 0.5rem;
+    }
+    .main11{
+        width: 100%;
+    }
+    .box1{
+        width: auto;
+        padding: 0rem 1rem;
+    }
+    .box2{
+        padding: 0rem 1rem;
+    }
+    iframe{
+        width: 42vw;
+        height: 15vh;
+    }
+    .j1{
+        left: 3vw;
+    }
+    .d1{
+        left: auto;
+    }
+    .d2{
+        width: 100%;
+    }
+    .h{
+        font-size: 12px;
+    }
+    .love1{
+        width: 76vw;
+    }
+    .arya1{
+        left: 47vw;
+        width: 50vw;
+    }
+    .ned{
+        background: url('images/ned2.jpg') no-repeat center center/cover;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .ned1{
+        width: 53vw;
+        top: 12vh;
+        right: 2vw;
+        background-color: rgba(10, 54, 136, 0.5);
+        padding: 1rem;
+    }
+    @keyframes ani1{
+        0%{
+            top: 20px;
+        }
+        100%{
+            top: 50px;
+        }
+    }
+    .main{
+        height: 56vh;
+    }
+}
+@media only screen and (max-width: 525px) {
+    .box1{
+        padding:0rem 0.5rem;
+    }
+    .box2{
+        padding:0rem 0.5rem;
+    }
+    .box2 img{
+        width: 40vw;
+    }
+    .main11{
+        font-size: 10px;
+    }
+    .j1 h1{
+        font-size: 2.5rem;
+    }
+    .j22{
+        margin-left: 0.5rem;
+    }
+    .d21{
+        margin-left: 0.5rem;
+    }
+    .john{
+        height: 100vh;
+    }
+    .dany{
+        height: 100vh;
+    }
+    .love_story{
+        height: 100vh;
+    }
+    .arya{
+        height: 100vh;
+    }
+    .h{
+        font-size: 10px;
+    }
+    .join h1{
+        font-size: 2rem;
+    }
+    .love1 h1{
+        font-size: 2.5rem;
+    }
+    .love1{
+        font-size: 13px;
+    }
+    .arya1{
+        width: 60vw;
+        left:35vw;
+    }
+    .arya12 h5{
+        font-size: 15px;
+    }
+    .arya12 img{
+        width: 23px;
+    }
+    .arya12{
+        margin: 3px 0px;
+    }
+    .ned1{
+        top: 19vh;
+        width: 75vw;
+    }
+    .ned22{
+        margin-right: 0;
+        padding-right: 29;
+    }
+    .ned23{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .ned21{
+        justify-content: space-evenly;
+    }
+    .send{
+        width: 12.5vw;
+    }
+    .main img{
+        width: 27rem;
+    }
+    @keyframes ani1{
+        0%{
+            top: 50px;
+        }
+        100%{
+            top: 80px;
+        }
+    }
+    .main h1{
+        margin-top: 8rem;
+    }
+}
+@media only screen and (max-width: 433px) {
+    .main img{
+        width: 93%;
+    }
+    .main h1{
+        font-size: 5rem;
+    }
+    @keyframes ani1{
+        0%{
+            top: 60px;
+        }
+        100%{
+            top: 90px;
+        }
+    }
+    .main{
+        height: 52vh;
+    }
+    .join h1{
+        font-size: 1.5rem;
+    }
+    .join2 button{
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    .join2 input{
+        font-size: 13px;
+    }
+    .arya1 h1{
+        font-size: 1.5rem;
+    }
+    .arya1{
+        left: 37vw;
+    }
+    .ned1{
+        font-size: 8px;
+        width: 66vw;
+    }
+    .ned2 input{
+        font-size: 12px;
+    }
+    .ned2 textarea{
+        font-size: 12px;
+    }
+    .send{
+        font-size: 13px;
+    }
+    .love1 h1{
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width: 404px) {
+    .main img{
+        width: 93%;
+    }
+    @keyframes ani1{
+        0%{
+            top: 60px;
+        }
+        100%{
+            top: 90px;
+        }
+    }
+    .main{
+        height: 48vh;
+    }
+    .h h2{
+        font-size: 14px;
+    }
+    .h{
+        font-size: 8px;
+    }
+    .j1 h1{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 578px) and (max-height: 825px) {
+    .main{
+        height: 61vh;
+    }
+}
+@media only screen and (max-width: 433px) and (max-height: 825px) {
+    .main{
+        height: 56vh;
+    }
+}
+@media only screen and (max-width: 404px) and (max-height: 825px) {
+    .main{
+        height: 53vh;
+    }
+}
